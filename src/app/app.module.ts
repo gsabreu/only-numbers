@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { OnlyNumbersModule } from './modules/only-numbers/only-numbers.module';
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    OnlyNumbersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
