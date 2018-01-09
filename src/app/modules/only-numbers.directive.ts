@@ -7,11 +7,11 @@ export class OnlyNumbers {
 
   constructor(private el: ElementRef) { }
 
-  @Input() OnlyNumber: boolean;
+  @Input() OnlyNumbers: boolean;
 
   @HostListener('keydown', ['$event']) onKeyDown(event) {
     let e = <KeyboardEvent> event;
-    if (this.OnlyNumber) {
+    if (this.OnlyNumbers) {
       if ([46, 8, 9, 27, 13, 110, 190].indexOf(e.keyCode) !== -1 ||
         // Allow: Ctrl+A
         (e.keyCode == 65 && e.ctrlKey === true) ||
