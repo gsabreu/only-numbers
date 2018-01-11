@@ -9,6 +9,7 @@ Component directives only numbers in numerical inputs. Use dot in decimal mark
 =================
 
 Authored by Guilherme Abreu 
+
 Licensed under [MIT](http://www.opensource.org/licenses/mit-license.php)
 
 
@@ -30,6 +31,11 @@ In app.module
     BrowserModule,
     OnlyNumbersModule
  	 ],
+
+
+In html
+
+	 <input type="number" name="only-number" OnlyNumbers = "true">
 
 
 
